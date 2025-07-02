@@ -28,7 +28,7 @@ echo "🚀 Enabling LightDM..."
 sudo systemctl enable lightdm
 
 echo "🚀 Downloading your dotfiles and applying themes..."
-cd ~
+cd
 curl -L -O https://github.com/VeniVediVeci96/KDE-Hyprland-Saturnus-Desktop/releases/download/1.0/dotfiles_theme.zip
 unzip -o dotfiles_theme.zip
 cd dotfiles_theme
@@ -36,7 +36,7 @@ chmod +x install-theme.sh
 ./install-theme.sh
 
 echo "🚀 Downloading and applying your konsave theme..."
-cd ~
+cd
 curl -L -O https://github.com/VeniVediVeci96/KDE-Hyprland-Saturnus-Desktop/releases/download/1.0/CyberOrange_konsave.zip
 unzip -o CyberOrange_konsave.zip
 konsave -i CyberOrange_konsave/CyberOrange.knsv
